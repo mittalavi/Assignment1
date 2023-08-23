@@ -16,7 +16,7 @@ public class BookService {
 	BookDao bookDao = new BookDao();
 
 	public void getBooks() {
-		bookDao.getbooks();
+		System.out.println(bookDao.getbooks());
 
 		
 	}
@@ -46,7 +46,7 @@ public class BookService {
 	public void searchBook() {
 		System.out.println("Enter either Book name or Author Name");
 		String searchField = sc.next();
-		bookDao.searchBook(searchField);
+		System.out.println(bookDao.searchBook(searchField));
 		
 	}
 }
